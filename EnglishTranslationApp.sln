@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27009.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnglishTranslationApp", "EnglishTranslationApp\EnglishTranslationApp.csproj", "{829EC4AD-665F-45FB-A4D1-F5C2F2849156}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{829EC4AD-665F-45FB-A4D1-F5C2F2849156}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{829EC4AD-665F-45FB-A4D1-F5C2F2849156}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{829EC4AD-665F-45FB-A4D1-F5C2F2849156}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{829EC4AD-665F-45FB-A4D1-F5C2F2849156}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{829EC4AD-665F-45FB-A4D1-F5C2F2849156}.Release|Any CPU.Build.0 = Release|Any CPU
+		{829EC4AD-665F-45FB-A4D1-F5C2F2849156}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB2A62AF-5005-4F22-9343-7D2A6321F9FB}
+	EndGlobalSection
+EndGlobal

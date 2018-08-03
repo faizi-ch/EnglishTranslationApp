@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="EnglishTranslationApp.EnglishTranslationApp" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="14" android:targetSdkVersion="25" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<application android:allowBackup="true" android:label="@string/app_name" android:icon="@drawable/Icon" android:theme="@android:style/Theme.Material">
+		<provider android:name="android.support.v4.content.FileProvider" android:authorities="EnglishTranslationApp.EnglishTranslationApp.fileprovider" android:exported="false" android:grantUriPermissions="true">
+			<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"></meta-data>
+		</provider>
+	</application>
+</manifest>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:umanoPanelHeight="68dp"
+    sothree:umanoShadowHeight="4dp"
+    sothree:umanoParallaxOffset="100dp"
+    sothree:umanoDragView="@+id/dragView"
+    sothree:umanoOverlay="true"
+    sothree:umanoScrollableView="@+id/list">
+<!-- MAIN CONTENT -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="370dp"
+                android:layout_above="@+id/fab"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/list_of_message"
+                android:stackFromBottom="true"
+                android:transcriptMode="alwaysScroll"
+                android:dividerHeight="0dp"
+                android:divider="@android:color/transparent" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:layout_marginBottom="65dp">
+                <Button
+                    android:id="@+id/leftSpeakButton"
+                    android:text="Speak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/centerPoint" />
+                <TextView
+                    android:id="@+id/centerPoint"
+                    android:text=""
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true" />
+                <Button
+                    android:id="@+id/rightSpeakButton"
+                    android:text="Speak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/centerPoint" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+<!-- SLIDING LAYOUT -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#424242"
+        android:clickable="true"
+        android:focusable="false"
+        android:id="@+id/dragView">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/leftButton"
+                android:text="English"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/centerPoint" />
+            <TextView
+                android:id="@+id/centerPoint"
+                android:text=""
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" />
+            <Button
+                android:id="@+id/rightButton"
+                android:text="English"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/centerPoint" />
+        </RelativeLayout>
+        <Spinner
+            android:id="@+id/spinnerSpeech"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:prompt="@string/language_prompt"
+            android:padding="5dp"
+          android:layout_marginTop="10dp"/>
+    </LinearLayout>
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>
